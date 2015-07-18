@@ -56,9 +56,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+        //cast pin
         let pin = view.annotation as! Pin
+        //delete from our context
         sharedContext.deleteObject(pin)
+        //remove the annotation from the map
         mapView.removeAnnotation(pin)
+        //save our context
         appDelegate.saveContext()
     }
     
