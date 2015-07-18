@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //long press gesture recognizer allowing us call our "dropPin" method.
+        var longPress = UILongPressGestureRecognizer(target: self, action: "dropPin:")
+        longPress.minimumPressDuration = 0.5
+        mapView.addGestureRecognizer(longPress)
+        
+        //Set ViewController as mapView delegate
+        mapView.delegate = self
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

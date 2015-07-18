@@ -15,6 +15,7 @@
 		18C6F5971B59D9CD00789EE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C6F5951B59D9CD00789EE9 /* LaunchScreen.xib */; };
 		18C6F5A31B59D9CD00789EE9 /* Persistent_PinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F5A21B59D9CD00789EE9 /* Persistent_PinsTests.swift */; };
 		18C6F5B71B59E49400789EE9 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F5B61B59E49400789EE9 /* Pin.swift */; };
+		18C6F5B91B59E88500789EE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C6F5B81B59E88500789EE9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		18C6F5A11B59D9CD00789EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C6F5A21B59D9CD00789EE9 /* Persistent_PinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent_PinsTests.swift; sourceTree = "<group>"; };
 		18C6F5B61B59E49400789EE9 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		18C6F5B81B59E88500789EE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C6F5B91B59E88500789EE9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		18C6F57B1B59D9CD00789EE9 = {
 			isa = PBXGroup;
 			children = (
+				18C6F5B81B59E88500789EE9 /* MapKit.framework */,
 				18C6F5861B59D9CD00789EE9 /* Persistent-Pins */,
 				18C6F59F1B59D9CD00789EE9 /* Persistent-PinsTests */,
 				18C6F5851B59D9CD00789EE9 /* Products */,
@@ -167,6 +171,11 @@
 				TargetAttributes = {
 					18C6F5831B59D9CD00789EE9 = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					18C6F59B1B59D9CD00789EE9 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -417,6 +426,7 @@
 				18C6F5A81B59D9CD00789EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C6F5A91B59D9CD00789EE9 /* Build configuration list for PBXNativeTarget "Persistent-PinsTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +435,7 @@
 				18C6F5AB1B59D9CD00789EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
