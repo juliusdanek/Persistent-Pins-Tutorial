@@ -10,6 +10,8 @@ import Foundation
 import CoreData
 import MapKit
 
+@objc(Pin)
+
 class Pin: NSManagedObject, MKAnnotation {
 
     @NSManaged var latitude: NSNumber
