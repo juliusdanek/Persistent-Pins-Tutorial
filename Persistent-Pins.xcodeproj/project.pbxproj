@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C6F58A1B59D9CD00789EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F5891B59D9CD00789EE9 /* AppDelegate.swift */; };
+		18C6F58D1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F58B1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodeld */; };
+		18C6F58F1B59D9CD00789EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F58E1B59D9CD00789EE9 /* ViewController.swift */; };
+		18C6F5921B59D9CD00789EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C6F5901B59D9CD00789EE9 /* Main.storyboard */; };
+		18C6F5941B59D9CD00789EE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C6F5931B59D9CD00789EE9 /* Images.xcassets */; };
+		18C6F5971B59D9CD00789EE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C6F5951B59D9CD00789EE9 /* LaunchScreen.xib */; };
+		18C6F5A31B59D9CD00789EE9 /* Persistent_PinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F5A21B59D9CD00789EE9 /* Persistent_PinsTests.swift */; };
+		18C6F5B71B59E49400789EE9 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6F5B61B59E49400789EE9 /* Pin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C6F59D1B59D9CD00789EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C6F57C1B59D9CD00789EE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C6F5831B59D9CD00789EE9;
+			remoteInfo = "Persistent-Pins";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C6F5841B59D9CD00789EE9 /* Persistent-Pins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persistent-Pins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C6F5881B59D9CD00789EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C6F5891B59D9CD00789EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18C6F58C1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Persistent_Pins.xcdatamodel; sourceTree = "<group>"; };
+		18C6F58E1B59D9CD00789EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C6F5911B59D9CD00789EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C6F5931B59D9CD00789EE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18C6F5961B59D9CD00789EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18C6F59C1B59D9CD00789EE9 /* Persistent-PinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Persistent-PinsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C6F5A11B59D9CD00789EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C6F5A21B59D9CD00789EE9 /* Persistent_PinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent_PinsTests.swift; sourceTree = "<group>"; };
+		18C6F5B61B59E49400789EE9 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C6F5811B59D9CD00789EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C6F5991B59D9CD00789EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C6F57B1B59D9CD00789EE9 = {
+			isa = PBXGroup;
+			children = (
+				18C6F5861B59D9CD00789EE9 /* Persistent-Pins */,
+				18C6F59F1B59D9CD00789EE9 /* Persistent-PinsTests */,
+				18C6F5851B59D9CD00789EE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C6F5851B59D9CD00789EE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C6F5841B59D9CD00789EE9 /* Persistent-Pins.app */,
+				18C6F59C1B59D9CD00789EE9 /* Persistent-PinsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C6F5861B59D9CD00789EE9 /* Persistent-Pins */ = {
+			isa = PBXGroup;
+			children = (
+				18C6F5B61B59E49400789EE9 /* Pin.swift */,
+				18C6F5891B59D9CD00789EE9 /* AppDelegate.swift */,
+				18C6F58E1B59D9CD00789EE9 /* ViewController.swift */,
+				18C6F5901B59D9CD00789EE9 /* Main.storyboard */,
+				18C6F5931B59D9CD00789EE9 /* Images.xcassets */,
+				18C6F5951B59D9CD00789EE9 /* LaunchScreen.xib */,
+				18C6F58B1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodeld */,
+				18C6F5871B59D9CD00789EE9 /* Supporting Files */,
+			);
+			path = "Persistent-Pins";
+			sourceTree = "<group>";
+		};
+		18C6F5871B59D9CD00789EE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C6F5881B59D9CD00789EE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C6F59F1B59D9CD00789EE9 /* Persistent-PinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C6F5A21B59D9CD00789EE9 /* Persistent_PinsTests.swift */,
+				18C6F5A01B59D9CD00789EE9 /* Supporting Files */,
+			);
+			path = "Persistent-PinsTests";
+			sourceTree = "<group>";
+		};
+		18C6F5A01B59D9CD00789EE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C6F5A11B59D9CD00789EE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C6F5831B59D9CD00789EE9 /* Persistent-Pins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C6F5A61B59D9CD00789EE9 /* Build configuration list for PBXNativeTarget "Persistent-Pins" */;
+			buildPhases = (
+				18C6F5801B59D9CD00789EE9 /* Sources */,
+				18C6F5811B59D9CD00789EE9 /* Frameworks */,
+				18C6F5821B59D9CD00789EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Persistent-Pins";
+			productName = "Persistent-Pins";
+			productReference = 18C6F5841B59D9CD00789EE9 /* Persistent-Pins.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C6F59B1B59D9CD00789EE9 /* Persistent-PinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C6F5A91B59D9CD00789EE9 /* Build configuration list for PBXNativeTarget "Persistent-PinsTests" */;
+			buildPhases = (
+				18C6F5981B59D9CD00789EE9 /* Sources */,
+				18C6F5991B59D9CD00789EE9 /* Frameworks */,
+				18C6F59A1B59D9CD00789EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C6F59E1B59D9CD00789EE9 /* PBXTargetDependency */,
+			);
+			name = "Persistent-PinsTests";
+			productName = "Persistent-PinsTests";
+			productReference = 18C6F59C1B59D9CD00789EE9 /* Persistent-PinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C6F57C1B59D9CD00789EE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Julius Danek";
+				TargetAttributes = {
+					18C6F5831B59D9CD00789EE9 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					18C6F59B1B59D9CD00789EE9 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 18C6F5831B59D9CD00789EE9;
+					};
+				};
+			};
+			buildConfigurationList = 18C6F57F1B59D9CD00789EE9 /* Build configuration list for PBXProject "Persistent-Pins" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C6F57B1B59D9CD00789EE9;
+			productRefGroup = 18C6F5851B59D9CD00789EE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C6F5831B59D9CD00789EE9 /* Persistent-Pins */,
+				18C6F59B1B59D9CD00789EE9 /* Persistent-PinsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C6F5821B59D9CD00789EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C6F5921B59D9CD00789EE9 /* Main.storyboard in Resources */,
+				18C6F5971B59D9CD00789EE9 /* LaunchScreen.xib in Resources */,
+				18C6F5941B59D9CD00789EE9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C6F59A1B59D9CD00789EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C6F5801B59D9CD00789EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C6F5B71B59E49400789EE9 /* Pin.swift in Sources */,
+				18C6F58F1B59D9CD00789EE9 /* ViewController.swift in Sources */,
+				18C6F58D1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodeld in Sources */,
+				18C6F58A1B59D9CD00789EE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C6F5981B59D9CD00789EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C6F5A31B59D9CD00789EE9 /* Persistent_PinsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C6F59E1B59D9CD00789EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C6F5831B59D9CD00789EE9 /* Persistent-Pins */;
+			targetProxy = 18C6F59D1B59D9CD00789EE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C6F5901B59D9CD00789EE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C6F5911B59D9CD00789EE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C6F5951B59D9CD00789EE9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C6F5961B59D9CD00789EE9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C6F5A41B59D9CD00789EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18C6F5A51B59D9CD00789EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C6F5A71B59D9CD00789EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Persistent-Pins/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18C6F5A81B59D9CD00789EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Persistent-Pins/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18C6F5AA1B59D9CD00789EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Persistent-PinsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Persistent-Pins.app/Persistent-Pins";
+			};
+			name = Debug;
+		};
+		18C6F5AB1B59D9CD00789EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Persistent-PinsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Persistent-Pins.app/Persistent-Pins";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C6F57F1B59D9CD00789EE9 /* Build configuration list for PBXProject "Persistent-Pins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C6F5A41B59D9CD00789EE9 /* Debug */,
+				18C6F5A51B59D9CD00789EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C6F5A61B59D9CD00789EE9 /* Build configuration list for PBXNativeTarget "Persistent-Pins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C6F5A71B59D9CD00789EE9 /* Debug */,
+				18C6F5A81B59D9CD00789EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C6F5A91B59D9CD00789EE9 /* Build configuration list for PBXNativeTarget "Persistent-PinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C6F5AA1B59D9CD00789EE9 /* Debug */,
+				18C6F5AB1B59D9CD00789EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18C6F58B1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18C6F58C1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodel */,
+			);
+			currentVersion = 18C6F58C1B59D9CD00789EE9 /* Persistent_Pins.xcdatamodel */;
+			path = Persistent_Pins.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18C6F57C1B59D9CD00789EE9 /* Project object */;
+}
