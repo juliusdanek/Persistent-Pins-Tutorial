@@ -55,20 +55,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+        let pin = view.annotation as! Pin
+        sharedContext.deleteObject(pin)
+        mapView.removeAnnotation(pin)
+        appDelegate.saveContext()
+    }
+    
+    
     func fetchAllPins() -> [Pin] {
-        let error: NSErrorPointer = nil
         
+        let error: NSErrorPointer = nil
         // Create the Fetch Request
         let fetchRequest = NSFetchRequest(entityName: "Pin")
-        
         // Execute the Fetch Request
         let results = sharedContext.executeFetchRequest(fetchRequest, error: error)
-        
         // Check for Errors
         if error != nil {
             println("Error in fectchAllActors(): \(error)")
         }
-        
         // Return the results, cast to an array of Pin objects
         return results as! [Pin]
     }
