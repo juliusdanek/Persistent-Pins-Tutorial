@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Julius Danek. All rights reserved.
 //
 
+import CoreData
 import UIKit
 import MapKit
 
@@ -13,8 +14,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var appDelegate: AppDelegate!
+    var sharedContext: NSManagedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //making sure we have the appDelegate at hand with the context save method
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        //initializing our context here
+        sharedContext = appDelegate.managedObjectContext
         
         //long press gesture recognizer allowing us call our "dropPin" method.
         var longPress = UILongPressGestureRecognizer(target: self, action: "dropPin:")
@@ -25,6 +35,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         //Set ViewController as mapView delegate
         mapView.delegate = self
+        
+        //add pins to map
+        mapView.addAnnotations(fetchAllPins())
     }
     
     func dropPin(gestureRecognizer: UIGestureRecognizer) {
@@ -33,12 +46,32 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let touchMapCoordinate: CLLocationCoordinate2D = mapView.convertPoint(tapPoint, toCoordinateFromView: mapView)
         
         if UIGestureRecognizerState.Began == gestureRecognizer.state {
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
+            //initialize our Pin with our coordinates and the context from AppDelegate
             let pin = Pin(annotationLatitude: touchMapCoordinate.latitude, annotationLongitude: touchMapCoordinate.longitude, context: appDelegate.managedObjectContext!)
+            //add the pin to the map
             mapView.addAnnotation(pin)
+            //save our context. We can do this at any point but it seems like a good idea to do it here.
             appDelegate.saveContext()
         }
     }
+    
+    func fetchAllPins() -> [Pin] {
+        let error: NSErrorPointer = nil
+        
+        // Create the Fetch Request
+        let fetchRequest = NSFetchRequest(entityName: "Pin")
+        
+        // Execute the Fetch Request
+        let results = sharedContext.executeFetchRequest(fetchRequest, error: error)
+        
+        // Check for Errors
+        if error != nil {
+            println("Error in fectchAllActors(): \(error)")
+        }
+        
+        // Return the results, cast to an array of Pin objects
+        return results as! [Pin]
+    }
+    
 }
 
